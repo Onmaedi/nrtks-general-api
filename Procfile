@@ -1,1 +1,1 @@
-gunicorn "src.app:create_app()"
+gunicorn heroku_deploy:app
