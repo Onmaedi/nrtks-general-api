@@ -1,0 +1,5 @@
+[default]
+TITLE = "NRTKS GENERAL API"
+EXTENSIONS = [
+  "src.apps.api.api_v1:init_app"
+]

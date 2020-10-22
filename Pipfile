@@ -10,6 +10,8 @@ autopep8 = "*"
 flask = "*"
 gunicorn = "*"
 python-dotenv = "*"
+dynaconf = "*"
+flask-restful = "*"
 
 [requires]
 python_version = "3.8"
