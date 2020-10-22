@@ -6,7 +6,7 @@ def create_app():
     app: Flask = Flask(__name__)
 
     @app.route("/")
-    def index():
+    def _():
         return "Test route"
 
     init_configuration(app)
