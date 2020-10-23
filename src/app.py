@@ -2,6 +2,7 @@ from flask import Flask
 from dotenv import load_dotenv
 from dynaconf import FlaskDynaconf
 from .config import configuration
+import os
 
 
 def create_app():
