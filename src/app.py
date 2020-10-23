@@ -1,5 +1,5 @@
 from flask import Flask
-from .config.configuration import init_configuration
+# from .config.configuration import init_configuration
 
 
 def create_app():
@@ -9,5 +9,5 @@ def create_app():
     def _():
         return "Test route"
 
-    init_configuration(app)
+    # init_configuration(app)
     return app
