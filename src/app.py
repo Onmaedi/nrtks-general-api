@@ -1,13 +1,11 @@
 from flask import Flask
-# from .config.configuration import init_configuration
+from dotenv import load_dotenv
+from dynaconf import FlaskDynaconf
+from .config import configuration
 
 
 def create_app():
+    load_dotenv()
     app: Flask = Flask(__name__)
-
-    @app.route("/")
-    def _():
-        return "Test route"
-
-    # init_configuration(app)
+    configuration.init_configuration(app)
     return app
